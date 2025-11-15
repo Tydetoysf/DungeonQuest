@@ -520,7 +520,7 @@ game:GetService("GuiService").ErrorMessageChanged:Connect(function()
     game:GetService("TeleportService"):Teleport(2414851778,game.Players.LocalPlayer)
 end)
 
-Library:Notify({Title="Loaded";Text=string.format('Loaded In '..(tick()-oldTick));Duration=5})
+Library:Notify({Title="Loaded";Text=string.format('Loaded In '..(tick()-oldTick));Duration=2})
 
 Library:Notify({
     Title = "Project infra runs you nigger";
@@ -531,13 +531,13 @@ Library:Notify({
 Library:Notify({
     Title = "Cincuentaz says he likes dick aw";
     Text = string.format('its true');
-    Duration = 2
+    Duration = 5
 })
 
 Library:Notify({
     Title = "Project infra > every script";
     Text = string.format('its true');
-    Duration = 2
+    Duration = 5
 })
 
 repeat task.wait() until Character:FindFirstChild("HumanoidRootPart") and Players.LocalPlayer.PlayerGui and Players.LocalPlayer.PlayerGui:FindFirstChild("HUD") and Players.LocalPlayer.PlayerGui.HUD:FindFirstChild("Main") and Players.LocalPlayer.PlayerGui.HUD.Main:FindFirstChild("PlayerStatus") and Players.LocalPlayer.PlayerGui and Players.LocalPlayer.PlayerGui.HUD.Main.PlayerStatus:FindFirstChild("PlayerStatus") and Players.LocalPlayer.PlayerGui.HUD.Main.PlayerStatus.PlayerStatus:FindFirstChild("PlayerName")
