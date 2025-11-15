@@ -487,6 +487,24 @@ local SettingsNotiPositionDropdown = SettingsUI:AddDropdown("SettingsNotiPositio
 SettingsNotiPositionDropdown:OnChanged(function(Value)
     Library.NotificationPosition = Value
 end)
+-- Add Clear Console button
+local SettingsClearConsoleButton = SettingsUI:AddButton({
+    Text = "Clear Console",
+    Func = function()
+        -- Simulate clearing console by printing newlines
+        for i = 1, 50 do
+            print("")
+        end
+        print("=== Console Cleared ===")
+        
+        -- Optional: notify through your library
+        Library:Notify({
+            Title = "Console",
+            Content = "Console output cleared.",
+            Duration = 3
+        })
+    end
+})
 
 Library.ThemeManager:SetLibrary(Library)
 Library.SaveManager:SetLibrary(Library)
