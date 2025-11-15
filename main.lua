@@ -529,7 +529,7 @@ Library:Notify({
 })
 
 Library:Notify({
-    Title = "Cincuentaz says he likes dick";
+    Title = "Cincuentaz says he likes dick aw";
     Text = string.format('its true');
     Duration = 2
 })
