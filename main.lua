@@ -195,7 +195,7 @@ end
 --Librarys
 local Library = loadstring(game:HttpGet("https://gist.githubusercontent.com/VertigoCool99/282c9e98325f6b79299c800df74b2849/raw/d9efe72dc43a11b5237a43e2de71b7038e8bb37b/library.lua"))()
 
-local Window = Library:CreateWindow({Title=" XYLOS Dungeon Quest WITH PROJECT INFRA",TweenTime=.15,Center=true})
+local Window = Library:CreateWindow({Title=" <--- UI maker ---> project infra",TweenTime=.15,Center=true})
    
 local FarmingTab = Window:AddTab("Farming")
 local MiscTab = Window:AddTab("Misc")
@@ -481,7 +481,7 @@ local SettingsMenuLabel = SettingsUI:AddLabel("SettingsMenuKeybindLabel","Menu K
 local SettingsMenuKeyPicker = SettingsMenuLabel:AddKeyPicker("SettingsMenuKeyBind",{Default="Insert",IgnoreKeybindFrame=true})
 Library.Options["SettingsMenuKeyBind"]:OnClick(function()
     Library:Toggle()
-    Library:Notify({Title="XYLO@PROJECT.INFRA";Text=string.format('Press Ins To Open The UI');Duration=5})
+    Library:Notify({Title="XYLO @ PROJECT.INFRA";Text=string.format('Press Ins To Open The UI');Duration=5})
 end)
 local SettingsNotiPositionDropdown = SettingsUI:AddDropdown("SettingsNotiPositionDropdown",{Text="Notification Position",Values={"Top_Left","Top_Right","Bottom_Left","Bottom_Right"},Default="Top_Left"})
 SettingsNotiPositionDropdown:OnChanged(function(Value)
@@ -523,11 +523,22 @@ end)
 Library:Notify({Title="Loaded";Text=string.format('Loaded In '..(tick()-oldTick));Duration=5})
 
 Library:Notify({
-    Title = "XYLO@PROJECT.INFRA";
+    Title = "Project infra runs you nigger";
     Text = string.format('Press Ins To Open The UI');
     Duration = 5
 })
 
+Library:Notify({
+    Title = "Cincuentaz says he likes dick";
+    Text = string.format('its true');
+    Duration = 2
+})
+
+Library:Notify({
+    Title = "Project infra > every script";
+    Text = string.format('its true');
+    Duration = 2
+})
 
 repeat task.wait() until Character:FindFirstChild("HumanoidRootPart") and Players.LocalPlayer.PlayerGui and Players.LocalPlayer.PlayerGui:FindFirstChild("HUD") and Players.LocalPlayer.PlayerGui.HUD:FindFirstChild("Main") and Players.LocalPlayer.PlayerGui.HUD.Main:FindFirstChild("PlayerStatus") and Players.LocalPlayer.PlayerGui and Players.LocalPlayer.PlayerGui.HUD.Main.PlayerStatus:FindFirstChild("PlayerStatus") and Players.LocalPlayer.PlayerGui.HUD.Main.PlayerStatus.PlayerStatus:FindFirstChild("PlayerName")
 Functions:GetBestDungeon()
