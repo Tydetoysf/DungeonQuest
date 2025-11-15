@@ -195,7 +195,7 @@ end
 --Librarys
 local Library = loadstring(game:HttpGet("https://gist.githubusercontent.com/VertigoCool99/282c9e98325f6b79299c800df74b2849/raw/d9efe72dc43a11b5237a43e2de71b7038e8bb37b/library.lua"))()
 
-local Window = Library:CreateWindow({Title=" Dungeon Quest",TweenTime=.15,Center=true})
+local Window = Library:CreateWindow({Title=" XYLOS Dungeon Quest WITH PROJECT INFRA",TweenTime=.15,Center=true})
    
 local FarmingTab = Window:AddTab("Farming")
 local MiscTab = Window:AddTab("Misc")
