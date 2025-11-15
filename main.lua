@@ -545,3 +545,31 @@ Functions:GetBestDungeon()
 AutoCreateDungeonNameDrop:SetValue(BestDungeon)
 AutoCreateDungeonDiffcultyDrop:SetValue(BestDifficulty)
 OldName,OldTitle = Players.LocalPlayer.PlayerGui.HUD.Main.PlayerStatus.PlayerStatus.PlayerName.Text,Character.Head.playerNameplate.Title.Text
+
+-- Project Infra: console loading bar
+local title = "Project Infra: loading"
+local total = 100
+local step = 5              -- percent step per tick
+local barLength = 20        -- number of boxes in the bar
+local filledChar = "█"      -- you can swap for "#"
+local emptyChar = "░"       -- you can swap for "-"
+
+print(title .. "...")
+
+for pct = 0, total, step do
+    -- calculate filled boxes based on percent
+    local filledCount = math.floor((pct / total) * barLength)
+    local emptyCount = barLength - filledCount
+
+    -- build the bar
+    local bar = string.rep(filledChar, filledCount) .. string.rep(emptyChar, emptyCount)
+
+    -- print the line
+    -- Example: Project Infra: loading: [██████░░░░░░░░░░] 30%
+    print(string.format("%s: [%s] %d%%", title, bar, pct))
+
+    -- simulate load time
+    task.wait(0.15)
+end
+
+print(title .. ": complete!")
